@@ -1,8 +1,7 @@
 
 const section = document.createElement('section')
-
+section.classList.add('main')
 section.innerHTML = `
-<section class="main">
   <div class="main__nav">
     <ul>
       <li>Болты</li>
@@ -26,7 +25,5 @@ section.innerHTML = `
       <li>Фланцы</li>
     </ul>
   </div>
-  <div class="main__content" id="main"></div>
-</section>`
-
+  <div class="main__content" id="main"></div>`
 export { section }

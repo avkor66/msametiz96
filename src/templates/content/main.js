@@ -1,3 +1,5 @@
+import { discussion } from '../block/discussion'
+
 export const main = `
 БОЛТЫ, ВИНТЫ ГОСТ, DIN (ИЗГОТОВЛЕНИЕ).
 
@@ -31,4 +33,6 @@ export const main = `
 
 8 (343) 288-79-72
 8 (343) 361-27-92
+${discussion}
+
 `

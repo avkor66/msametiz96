@@ -1,10 +1,11 @@
+import { discussion } from '../block/discussion'
+
 export const equipment = `
 <div class="main__content__header">
-    <h1>О компании</h1>
+    <h1>Оборудование</h1>
 </div>
 <div class="main__content__description">
-    <img src="./assets/images/about.jpeg" alt="about" srcset=""> 
-    <p>
+    <p>  
         "ПКФ МетСервис-А"
     </p>    
     <p>
@@ -15,30 +16,7 @@ export const equipment = `
         На токарном участке производят продукцию с большой точностью, что обеспечивает использование изделий в высокоточных конструкциях.
     </p>
         
-        <br>
-С удовольствием обсудим ваш проект
-<br>
-<br>
-+7 (963) 443 56 65
-<br>
-<br>
+    ${discussion}
 
-+7 (343) 295 85 86
-<br>
-<br>
-
-+7 (343) 288 79 72
-<br>
-<br>
-
-a131010@mail.ru
-
-<br>
-<br>
-<br>
-Юр. адрес: Свердловская область, г. Полевской, мк. Черемушки 18-3
-<br>
-<br>
-Факт. адрес: Свердловская область, г. Екатеринбург пер. Саранинский 9 офис 210
 </div>
 `

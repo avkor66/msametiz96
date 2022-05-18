@@ -1,53 +1,111 @@
+import tk_kit from '../../assets/images/tk_logo/kit.svg'
+import tk_express from '../../assets/images/tk_logo/express-auto.png'
+import tk_dellin from '../../assets/images/tk_logo/dellin.png'
+import tk_baikalsr from '../../assets/images/tk_logo/baikalsr.svg'
+import tk_jde from '../../assets/images/tk_logo/jde.svg'
+import { discussion } from '../block/discussion'
+
 export const delivery = `
 <div class="main__content__header">
     <h1>Доставка</h1>
 </div>
 <div class="main__content__description">
-   <p>Работаем с любыми транспортными компаниями:
-</p>
-TODO: вставить картинки транспортных компаний + ссылка на сайт и калькуратор расчета стоимости доставки
-    <p>
-        КИТ      
-    </p>    
-        <p>
-            Экспресс-Авто 
-        </p>
-        <p>
-            Деловые линии
-        </p>
-        <p>Байкал-Сервис</p>
-        <p> ЖелДор Экспедиция</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-С удовольствием обсудим ваш проект
-<br>
-<br>
-+7 (992) 002 62 60
-<br>
-<br>
-+7 (963) 443 56 65
-<br>
-<br>
+    <div class="tk">
+        <p>Работаем с любыми транспортными компаниями:</p>
+        <div class="tk__content">
 
-+7 (343) 295 85 86
-<br>
-<br>
+            <div class="tk__content__item">
+                <div class="tk__content__item__name">
+                    <a href="https://tk-kit.com">
+                        ООО “КИТ.ТК”
+                    </a>
+                </div>
+                <div class="tk__content__item__calculate">
+                    <a href="https://tk-kit.com/order">
+                        <i class="fa fa-calculator fa-4" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="tk__content__item__image">
+                    <a href="https://tk-kit.com">
+                        <img src="${tk_kit}" alt="about" srcset=""> 
+                    </a>
+                </div>
+            </div>
 
-+7 (343) 288 79 72
-<br>
-<br>
+            <div class="tk__content__item">
+                <div class="tk__content__item__name">
+                    <a href="http://expressauto.ru/">
+                        ТК «Экспресс-Авто»
+                    </a>
+                </div>
+                <div class="tk__content__item__calculate">
+                    <a href="http://expressauto.ru/autokalkulyator">
+                        <i class="fa fa-calculator fa-4" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="tk__content__item__image">
+                    <a href="http://expressauto.ru/">
+                        <img src="${tk_express}" alt="about" srcset=""> 
+                    </a>
+                </div>
+            </div>
 
-a131010@mail.ru
+            <div class="tk__content__item">
+                <div class="tk__content__item__name">
+                    <a href="https://www.dellin.ru/">
+                        ГК «Деловые Линии»,
+                    </a>
+                </div>
+                <div class="tk__content__item__calculate">
+                    <a href="https://www.dellin.ru/">
+                        <i class="fa fa-calculator fa-4" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="tk__content__item__image">
+                    <a href="https://www.dellin.ru/">
+                        <img src="${tk_dellin}" alt="about" srcset=""> 
+                    </a>
+                </div>
+            </div>
 
-<br>
-<br>
-<br>
-Юр. адрес: Свердловская область, г. Полевской, мк. Черемушки 18-3
-<br>
-<br>
-Факт. адрес: Свердловская область, г. Екатеринбург пер. Саранинский 9 офис 210
+            <div class="tk__content__item">
+                <div class="tk__content__item__name">
+                    <a href="https://www.baikalsr.ru/">
+                        ТК «Байкал Сервис»
+                    </a>
+                </div>
+                <div class="tk__content__item__calculate">
+                    <a href="https://request.baikalsr.ru/calculator/">
+                        <i class="fa fa-calculator fa-4" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="tk__content__item__image">
+                    <a href="https://baikalsr.ru/">
+                        <img src="${tk_baikalsr}" alt="about" srcset=""> 
+                    </a>
+                </div>
+            </div>
+
+            <div class="tk__content__item">
+                <div class="tk__content__item__name">
+                    <a href="https://www.jde.ru/">
+                        ГК «ЖелДорЭкспедиция»
+                    </a>
+                </div>
+                <div class="tk__content__item__calculate">
+                    <a href="https://www.jde.ru/online/calculator.html">
+                        <i class="fa fa-calculator fa-4" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="tk__content__item__image">
+                    <a href="https://www.jde.ru/">
+                        <img src="${tk_jde}" alt="about" srcset=""> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    ${discussion}
+    </div>
 </div>
 `

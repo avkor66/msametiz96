@@ -33,23 +33,26 @@ const nav = document.createElement('nav')
 nav.classList.add('nav')
 
 nav.innerHTML = `
-<ul>
-  <li class="active">
+<ul> 
+  <li class="menu_header active" data-id="main">
+    Главная
+  </li>
+  <li class="menu_header" data-id="products">
+  Продукция
+  </li>
+  <li class="menu_header" data-id="services">
+  Услуги
+  </li>
+  <li class="menu_header" data-id="equipment">
+  Оборудование
+  </li>
+  <li class="menu_header" data-id="delivery">
+  Доставка
+  </li>
+  <li class="menu_header" data-id="about">
     О компании
   </li>
-  <li>
-    Продукция
-  </li>
-  <li>
-    Услуги
-  </li>
-  <li>
-    Оборудование
-  </li>
-  <li>
-    Доставка
-  </li>
-  <li>
+  <li class="menu_header" data-id="contacts">
     Контакты
   </li>
 </ul>`
