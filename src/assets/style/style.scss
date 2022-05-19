@@ -120,6 +120,9 @@ header {
         color: $orange;
         background-color: $gray;
       }
+      &.active {        
+        color: $orange;
+      }
     }
   }
 
@@ -148,26 +151,126 @@ header {
         margin-left: 10px;
         height: 600px;
       }
-    }
-
-    &__cards {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      color: #000;
-      background-color: #FFF;
-
-      &__item {
-        margin: 30px;
+      &__why {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 35%;
-        font-size: 1.2rem;
+        flex-wrap: wrap;
+        width: 100%;
+        &__item {
+          box-sizing: border-box;
+          width: 30%;
+          font-size: 1.1rem;
+          padding: 20px;
+          &__title {
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          &__desc {
+            font-weight: 300;
 
+          }
+        }
+      }
+      &__clients {
+        text-align: center;
+      }
+      &__fakt {
+
+        text-align: left;
+        display: flex;
+        box-sizing: border-box;
+
+        &__item {
+          max-width: 250px;
+          padding: 0 20px;
+        }
+      }
+    }
+    &__prod {
+      &__description {
+        color: #c1c1c1;
+        width: 100%;
+        text-align: justify;
+        font-size: 1.3rem;
+  
         img {
-          height: 180px;
+          float: right;
+          margin-left: 10px;
+          height: 600px;
+        }
+      }
+      &__header {
+        display: flex;
+        justify-content: center;
+  
+        h1 {
+          margin-top: 5px;
+        }
+      }
+      &__cards {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        color: #000;
+        background-color: #FFF;
+        
+        &__item {
+          margin: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 35%;
+          font-size: 1.2rem;
+          
+          img {
+            height: 180px;
+          }
+        }
+      }
+    }
+    &__component {
+      background-color: #FFF;
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      &__title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 20px 0;
+      }
+      &__gost {
+        & > p {
+          margin: 0 50px;
+          font-weight: 700;
+        }
+        & > .gost {
+          cursor: pointer;
+          transition: all 0.8s;
+        }
+        & > .gost:hover {
+          transform: scale(1.02);
+        }
+      }
+      &__desc {
+        margin: 0 50px;
+        & > p {
+          margin: 10px 0;
+          text-indent: 1cm;
+          text-align: justify;
+        }
+      }
+      &__images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 80px;
+        &__item {
+          & > img {
+            height: 200px;
+          }
         }
       }
     }
@@ -213,7 +316,7 @@ footer {
     }
 
     &__right {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     &__wrapper {
@@ -224,7 +327,7 @@ footer {
 
       &__line {
         margin-bottom: 0.5vw;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
 
         a {
           color: $gray;
@@ -322,4 +425,7 @@ footer {
       color: $gray;
     }
   }
+}
+.nav_menu_item .active {
+
 }

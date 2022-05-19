@@ -16,7 +16,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'МЕТСЕРВИС-А',
+      title: 'ПКФ МЕТСЕРВИС-А',
       template: path.resolve(__dirname, ('./src/template.html')),
       filename: 'index.html'
     }),
